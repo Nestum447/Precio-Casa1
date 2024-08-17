@@ -1,5 +1,6 @@
-streamlit run app.py
 import streamlit as st
+
+def main():
 import pickle
 import numpy as np  
 
@@ -19,3 +20,6 @@ if st.button('Predecir Precio'):
     datos_nueva_casa = np.array([[tamaño, habitaciones, edad]])
     prediccion_precio = model.predict(datos_nueva_casa)
     st.write(f'El precio estimado de la casa es: ${prediccion_precio[0]:,.2f}')
+if  _name_== "_main_"
+    main()
+
